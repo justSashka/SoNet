@@ -1,0 +1,46 @@
+.postItemWrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px 30px 10px;
+    padding: 2px;
+    border-top: 1px solid black;
+    max-width: 100%;
+}
+.postAuthor{
+    max-width: 150px;
+}
+.postAuthorAva{
+    width: 100px;
+    border-radius: 60px;
+}
+.postAuthorName{
+    font-size: 17.5px;
+    font-weight: bold;
+}
+.postText{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.postButtonsBlock{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.postButtonsBlock button{
+    background-color: white;
+    width: 45px;
+    transition: 0.5s;
+}
+.postLike:hover{
+    background-color:green;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+.postDislike:hover{
+    background-color:red;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+

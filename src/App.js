@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header.jsx'
+import Home from './components/MainContent/Home/Home.jsx';
+import MyPage from './components/MainContent/Mypage/MyPage.jsx';
+import News from './components/MainContent/News/News.jsx';
+import Messages from './components/MainContent/Messages/Messages.jsx';
+import Friends from './components/MainContent/Friends/Friends.jsx';
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='appWrapper'>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/mypage' element={<MyPage />} />
+        <Route path='/news' element={<News />} />
+        <Route path='/messages' element={<Messages />} />
+        <Route path='/friends' element={<Friends />} />
+      </Routes>
     </div>
   );
 }

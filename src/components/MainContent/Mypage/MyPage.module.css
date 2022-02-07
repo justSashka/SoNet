@@ -1,0 +1,19 @@
+.myPageWrapper{
+    max-width: 1400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+.mainInfoContainer{
+    display: flex;
+}
+.avaContainer{
+    display: flex;
+    flex-direction: column;
+}
+.avaImg{
+    max-width: 300px;
+    border-radius: 1000px;
+    margin: 10px;
+}

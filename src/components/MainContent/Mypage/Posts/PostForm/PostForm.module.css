@@ -1,0 +1,18 @@
+.postFormWrapper{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.postTxtArea{
+    font-size: 20px;
+    resize: none;
+    padding: 5px;
+}
+.submitPost{
+    display: block;
+    width: 100%;
+    background-color: white;
+    color: var(--accent-color);
+    font-weight: bold;
+    border: 1px solid var(--accent-color);
+}

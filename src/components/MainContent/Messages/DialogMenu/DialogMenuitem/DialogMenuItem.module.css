@@ -1,0 +1,22 @@
+.dialogMenuItemWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+}
+.dialogName{
+    margin-left: 10px;
+}
+.messagesWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.dialogAva{
+    max-width: 90px;
+    max-height: 80px;
+    border-radius: 100px;
+}
+

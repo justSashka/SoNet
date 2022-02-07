@@ -1,0 +1,26 @@
+.headerWrapper{
+    height: 50px;
+    width: 100%;
+    background-color:White;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.headerLogo{
+    margin-left: 50px;
+    margin-right: auto;
+}
+.nav{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    margin-right: 50px;
+}
+.headerLink{
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.headerLink:hover{
+    transition: 0.5s;
+    color: var(--accent-color);
+}
