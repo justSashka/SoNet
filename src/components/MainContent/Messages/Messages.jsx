@@ -6,7 +6,7 @@ import s from './Messages.module.css';
 const Messages = (props) => {
     return (
         <div className={s.messagesWrapper}>
-            <DialogMenu />
+            <DialogMenu dialogs={props.dialogs} />
             <Chat />
         </div>
     );

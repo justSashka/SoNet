@@ -7,15 +7,15 @@ import Messages from './components/MainContent/Messages/Messages.jsx';
 import Friends from './components/MainContent/Friends/Friends.jsx';
 import { Routes, Route } from 'react-router-dom';
 
-const App = () => {
+const App = (props) => {
   return (
     <div className='appWrapper'>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/mypage' element={<MyPage />} />
+        <Route path='/mypage' element={<MyPage posts={props.appState.postsData} />} />
         <Route path='/news' element={<News />} />
-        <Route path='/messages' element={<Messages />} />
+        <Route path='/messages' element={<Messages dialogs={props.appState.dialogsData} />} />
         <Route path='/friends' element={<Friends />} />
       </Routes>
     </div>

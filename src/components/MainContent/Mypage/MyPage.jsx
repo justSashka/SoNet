@@ -7,7 +7,7 @@ import Posts from './Posts/Posts.jsx';
 import s from './MyPage.module.css';
 
 
-const MyPage = () => {
+const MyPage = (props) => {
     return (
         <div className={s.myPageWrapper}>
            <div className={s.mainInfoContainer}>
@@ -23,7 +23,7 @@ const MyPage = () => {
            <Photo />
            <div className={s.wallContainer}>
                <PostForm />
-               <Posts />
+               <Posts posts ={props.posts}/>
            </div>
         </div>
     );
