@@ -13,7 +13,7 @@ const App = (props) => {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/mypage' element={<MyPage posts={props.appState.postsData} />} />
+        <Route path='/mypage' element={<MyPage posts={props.appState.postsData} addPost={props.addPost} updateNewPostText={props.updateNewPostText} />} />
         <Route path='/news' element={<News />} />
         <Route path='/messages' element={<Messages dialogs={props.appState.dialogsData} />} />
         <Route path='/friends' element={<Friends />} />
