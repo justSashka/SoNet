@@ -22,7 +22,7 @@ const MyPage = (props) => {
            </div>
            <Photo />
            <div className={s.wallContainer}>
-               <PostForm addPost={props.addPost} newPostText={props.newPostText} updateNewPostText={props.updateNewPostText}/>
+               <PostForm dispatch={props.dispatch}/>
                <Posts posts ={props.posts} />
            </div>
         </div>
